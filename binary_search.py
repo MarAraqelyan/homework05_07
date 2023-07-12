@@ -11,7 +11,7 @@ def binary_search_iterative(array, target, low, high):
 
 ls = [0, 2, 4, 5, 8, 9, 10]
 target = int(input("Enter the target:"))
-target_index = binary_search_iterative(ls, target, ls[0], ls[len(ls) - 1])
+target_index = binary_search_iterative(ls, target, 0, len(ls) - 1)
 
 if target_index != -1:
 	print("The target is at index", target_index)
